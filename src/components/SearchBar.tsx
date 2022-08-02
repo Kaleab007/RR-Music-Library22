@@ -1,8 +1,16 @@
 import React from 'react'
-import { FormEvent, useState } from 'react'
+import { useState } from 'react'
+   
 
-function SearchBar(props: { handleSearch: (arg0: FormEvent<HTMLFormElement>, arg1: string) => void }){
-    let [searchTerm, setSearchTerm] = useState('')
+interface SearchBarProps {
+    handleSearch: Function
+}
+
+const SearchBar = (props: SearchBarProps) => 
+
+
+    {
+          let [searchTerm, setSearchTerm] = useState('')
 
     return (
             <form onSubmit={(e) => props.handleSearch(e, searchTerm)}>
@@ -12,4 +20,4 @@ function SearchBar(props: { handleSearch: (arg0: FormEvent<HTMLFormElement>, arg
     )
 }
 
-export default SearchBar
+export default SearchBar;

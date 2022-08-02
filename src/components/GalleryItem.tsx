@@ -1,7 +1,7 @@
-import React from 'react';
-import { JSXElementConstructor, ReactElement, ReactFragment, ReactPortal, useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 
-function GalleryItem(props: { item: { trackName: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | null | undefined; collectionName: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | null | undefined; artworkUrl100: any; primaryGenreName: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; releaseDate: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined } }){
+function GalleryItem(props: { item: { trackName: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | null | undefined; collectionName: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | null | undefined; artworkUrl100: any; primaryGenreName: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; releaseDate: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined } }){
     let [view, setView] = useState(false)
 
     const simpleView = () => {
@@ -48,4 +48,4 @@ function GalleryItem(props: { item: { trackName: string | number | boolean | Rea
     )
 } 
 
-export default GalleryItem
+export default GalleryItem;

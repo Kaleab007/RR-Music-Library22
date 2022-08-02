@@ -25,10 +25,11 @@ function App() {
   }
   }, [searchTerm])
 
-  const handleSearch = (e: any, term: any) => {
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>, term: string) => {
     e.preventDefault()
     setSearchTerm(term)
-}
+  }
+
 
   return (
     <div className="App">

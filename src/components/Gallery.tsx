@@ -1,6 +1,7 @@
+import React from 'react'
 import GalleryItem from './GalleryItem'
 
-function Gallery(props){
+function Gallery(props: { data: any[] }){
 
     const display = props.data.map((item, index) => {
         return (
@@ -15,4 +16,4 @@ function Gallery(props){
     )
 }
 
-export default Gallery
+export default Gallery;
